@@ -1,0 +1,4 @@
+name = "Assembly"
+grammar = "asm"
+path_suffixes = ["asm", "s", "S"]
+line_comments = ["# ", "; ", "// "]
