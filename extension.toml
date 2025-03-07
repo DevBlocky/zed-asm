@@ -5,7 +5,7 @@ description = "Generic Syntax Highlighting for Assembly"
 repository = "https://github.com/DevBlocky/zed-asm"
 id = "assembly-syntax"
 schema_version = 1
-grammar = "asm"
+
 [grammars.asm]
 repository = "https://github.com/RubixDev/tree-sitter-asm"
 commit = "6ace266be7ad6bf486a95427ca3fc949aff66211"
