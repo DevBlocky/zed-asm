@@ -1,7 +1,0 @@
-{
-  "name": "Assembly Syntax",
-  "version": "0.0.1",
-  "authors": ["Jacob Parker <blocckba5her@gmail.com>"],
-  "description": "Generic Syntax Highlighting for Assembly",
-  "repository": "https://github.com/DevBlocky/zed-asm"
-}
