@@ -1,0 +1,11 @@
+id = "zed-asm"
+name = "Assembly"
+description = "Generic Syntax Highlighting for Assembly"
+version = "0.0.2"
+schema_version = 1
+authors = ["Jacob Parker <blocckba5her@gmail.com>", "Oxey <lucoerlemans37@gmail.com>"]
+repository = "https://github.com/o-x-e-y/zed-asm"
+
+[grammars.asm]
+repository = "https://github.com/RubixDev/tree-sitter-asm"
+commit = "04962e15f6b464cf1d75eada59506dc25090e186"
