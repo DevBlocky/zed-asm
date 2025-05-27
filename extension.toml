@@ -8,4 +8,4 @@ repository = "https://github.com/o-x-e-y/zed-asm"
 
 [grammars.asm]
 repository = "https://github.com/RubixDev/tree-sitter-asm"
-commit = "04962e15f6b464cf1d75eada59506dc25090e186"
+commit = "6ace266be7ad6bf486a95427ca3fc949aff66211"
