@@ -3,7 +3,7 @@ version = "0.0.2"
 authors = ["Jacob Parker <blocckba5her@gmail.com>"]
 description = "Generic Syntax Highlighting for Assembly"
 repository = "https://github.com/DevBlocky/zed-asm"
-id = "assembly-syntax"
+id = "assembly"
 schema_version = 1
 
 [grammars.asm]
