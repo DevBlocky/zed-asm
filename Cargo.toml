@@ -1,0 +1,10 @@
+[package]
+name = "zed-asm"
+version = "0.0.3"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.5.0"
