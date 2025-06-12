@@ -8,7 +8,7 @@ schema_version = 1
 
 [grammars.asm]
 repository = "https://github.com/RubixDev/tree-sitter-asm"
-commit = "6ace266be7ad6bf486a95427ca3fc949aff66211"
+commit = "04962e15f6b464cf1d75eada59506dc25090e186"
 
 [language_servers.asm-lsp]
 name = "asm-lsp"
