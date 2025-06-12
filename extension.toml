@@ -1,7 +1,7 @@
-name = "Assembly Syntax"
-version = "0.0.2"
+name = "Assembly"
+version = "0.0.3"
 authors = ["Jacob Parker <blocckba5her@gmail.com>"]
-description = "Generic Syntax Highlighting for Assembly"
+description = "Assembly support."
 repository = "https://github.com/DevBlocky/zed-asm"
 id = "assembly"
 schema_version = 1
@@ -9,3 +9,7 @@ schema_version = 1
 [grammars.asm]
 repository = "https://github.com/RubixDev/tree-sitter-asm"
 commit = "6ace266be7ad6bf486a95427ca3fc949aff66211"
+
+[language_servers.asm-lsp]
+name = "asm-lsp"
+languages = ["Assembly"]
