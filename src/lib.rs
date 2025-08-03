@@ -1,6 +1,7 @@
 use std::fs;
-
 use zed_extension_api::{self as zed, Command, LanguageServerId};
+
+const ASM_LSP_TOML_CONFIG: &str = ".asm-lsp.toml";
 
 struct Assembly {
     cached_binary_path: Option<String>,
@@ -117,6 +118,16 @@ impl zed::Extension for Assembly {
         language_server_id: &LanguageServerId,
         worktree: &zed::Worktree,
     ) -> zed::Result<Command> {
+        // disable asm-lsp if .asm-lsp.toml includes "disable = true" in top-level table
+        if let Ok(contents) = worktree.read_text_file(ASM_LSP_TOML_CONFIG) {
+            let config = contents.parse::<toml::Table>().map_err(|e| e.to_string())?;
+            if let Some(toml::Value::Boolean(disabled)) = config.get("disable")
+                && *disabled
+            {
+                return Err(format!("asm-lsp disabled in {}", ASM_LSP_TOML_CONFIG));
+            }
+        }
+
         Ok(zed::Command {
             command: self.language_server_binary_path(language_server_id, worktree)?,
             args: vec![],

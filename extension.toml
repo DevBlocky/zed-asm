@@ -1,7 +1,7 @@
-name = "Assembly"
-version = "0.0.3"
+name = "Assembly Language Server"
+version = "0.1.0"
 authors = ["Jacob Parker <blocckba5her@gmail.com>"]
-description = "Assembly support."
+description = "Assembly syntax highlighting and language server"
 repository = "https://github.com/DevBlocky/zed-asm"
 id = "assembly"
 schema_version = 1
