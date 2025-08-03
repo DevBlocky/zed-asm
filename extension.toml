@@ -1,11 +1,15 @@
-name = "Assembly Syntax"
-version = "0.0.2"
+name = "Assembly Language Server"
+version = "0.1.0"
 authors = ["Jacob Parker <blocckba5her@gmail.com>"]
-description = "Generic Syntax Highlighting for Assembly"
+description = "Assembly syntax highlighting and language server"
 repository = "https://github.com/DevBlocky/zed-asm"
 id = "assembly"
 schema_version = 1
 
 [grammars.asm]
 repository = "https://github.com/RubixDev/tree-sitter-asm"
-commit = "6ace266be7ad6bf486a95427ca3fc949aff66211"
+commit = "04962e15f6b464cf1d75eada59506dc25090e186"
+
+[language_servers.asm-lsp]
+name = "asm-lsp"
+languages = ["Assembly"]
